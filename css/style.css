@@ -1,0 +1,355 @@
+html{
+    --all-color:#;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.bg-gray{
+    background-color: #f7f7f7;
+}
+.max-width-500{
+    max-width: 800px;
+}
+/* start of navbar section */
+nav{
+    font-size: 13px;
+    font-weight: 600;
+}
+.navbar-nav .nav-link.active{
+    border-bottom: 2px solid black;
+    font-weight: 900;
+    width: fit-content;
+}
+/* end of navbar section */
+/* start header section */
+header.developer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(../images/bg.jpg);
+    background-position: top;
+    background-size: cover;
+}
+header div.header-content p{
+    font-size: 40px;
+    font-weight: 900;
+}
+header div.header-content h1{
+    font-weight: 100;
+}
+header div.header-content h1::after{
+    content: " |";
+    animation: typing 5s infinite;
+    font-weight: 400;
+}
+header div.header-content ul li a i{
+    font-size: 15px;
+}
+header div.header-content ul li{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+@keyframes typing{
+ 
+    5%{
+        content: ' D|';
+    }
+    10%{
+        content: ' De|';
+    }
+    15%{
+        content: ' Des|';
+    }
+    20%{
+        content: ' Desi|';
+    }
+    25%{
+        content: ' Desin|';
+    }
+    30%{
+        content: ' Desine|';
+    }
+    35%{
+        content: ' Desinger|';
+    }
+    40%{
+        content: ' Desinge|';
+    }
+    45%{
+        content: ' Desing|';
+    }
+    50%{
+        content: ' Desin|';
+    }
+    55%{
+        content: ' Desi|';
+    }
+    60%{
+        content: ' Des|';
+    }
+    65%{
+        content: ' De|';
+    }
+    70%{
+        content: ' Dev|';
+    }
+    75%{
+        content: ' Deve|';
+    }
+    80%{
+        content: ' Devel|';
+    }
+    85%{
+        content: ' Develo|';
+    }
+    90%{
+        content: ' Develop|';
+    }
+    95%{
+        content: ' Develope|';
+    }
+    100%{
+        content: ' Developer|';
+    }
+}
+/* end header section */
+/* start of about section */
+@media only screen and (min-width: 768px) {
+    .md-75{
+        width: 75%;
+    }
+}
+div.about p{
+    color: rgba(0, 0, 0, 0.5);
+}
+div.about a{
+    font-size: 12px;
+    transition: all .5s;
+
+}
+div.about a.download:hover{
+    background-color: white !important;
+    color: black !important;
+}
+div.about a.contact:hover{
+    background-color: black !important;
+    color: white !important;
+}
+div.back-image div.back-dots{
+    background-image: url(../images/dots.png);
+    position: absolute;
+    width: 70%;
+    top:100px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+}
+/* end of about section */
+/* start of services section */
+div.services div div div div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    transition: all .5s;
+}
+div.services div div.cols div.icons{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+div.services div div div h3{
+    font-size: 20px;
+}
+div.services div div div p{
+    font-size: 12px;
+}
+@media only screen and (min-width: 768px) {
+    div.services div div div p{
+        font-size: 14px;
+    }
+}
+div.services div div.cols div.icons:hover div{
+    background-color: black;
+    color:#f7f7f7
+}
+/* end of services section */
+/* start of portfolio section */
+div.portfolio div div div.port-layer{
+    transform: translateY(10px);
+    transition: all .5s;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+div.portfolio div div div p{
+    transform: translateY(-10px);
+    transition: all .5s;
+    font-size: 12px;
+    font-weight: 900;
+}
+div.portfolio div div:hover div.port-layer{
+    transform: translateY(0px);
+    opacity: 100%;
+}
+div.portfolio div div:hover div p{
+    transform: translateY(10px);
+}
+div.portfolio div div div div div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    opacity: 100%;
+    transition: all .2s;
+}
+div.portfolio div div div div div:hover{
+    color: black;
+    background-color: white;
+}
+/* end of portfolio section */
+/* start of testimonial section */
+div.testimonial img{
+    width: 90px;
+    border-radius: 50%;
+}
+div.testimonial p{
+    font-size: 12px;
+}
+div.testimonial h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+div.testimonial p.envato{
+    margin-top: -10px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #343434;
+}
+/* end of testimonial section */
+/* start of numbers section */
+div.items-numbers i{
+    font-size: 30px;
+}
+/* end of numbers section */
+/* start of team section */
+div.team-item{
+    background-color:rgba(52, 52, 52, .8) ;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+div.team-item h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+div.team-item h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+div.team-item div.team-image img{
+    transition: all .5s;
+    z-index: 1;
+}
+div.team-item div.team-image:hover img{
+    transform: scale(1.2);
+}
+div.team-item div.team-image img:hover div.team-layer{
+    transform: scale(1);
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+div.team-item:hover div.team-image div.team-layer{
+    transform: scale(1);
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+div.team-item div.team-image div.team-layer{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 8px;
+    transition: all .5s;
+    transform: rotateY(-360deg) scale(.5);
+    opacity: 0;
+}
+div.team-item div.team-image div.team-layer a{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+}
+div.team-item div.team-image div.team-layer a:hover{
+    background-color: white;
+    color: black;
+}
+/* end of team section */
+/* start of contact section */
+div.contact-info div{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    transition: all .5s;
+}
+div.contact-info:hover div{
+    background-color: black;
+    color: #f7f7f7;
+}
+div.contact-info h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+div.contact-info p{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.7);
+}
+div.contact form div button{
+    transition: all .5s;
+}
+div.contact form div button:hover{
+    background-color: white !important;
+    color: black !important;
+}
+div.contact form div input{
+    height: 40px;
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+div.contact form div textarea{
+    height: 130px;
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+/* end of contact section */
+/* start of footer section */
+footer.last-section{
+    background-color: #1c1c1c;
+    height: 80px;
+    padding: 20px;
+}
+footer.last-section p{
+    color: #748182;
+    font-size: 13px;
+}
+/* end of footer section */
+.dots{
+background-image: url(../images/dots.png);
+width: fit-content;
+}
